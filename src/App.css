@@ -1,0 +1,19 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+  display: inline;
+  padding: 5px;
+  font-size: 30px;
+}
+
+#name {
+  font-size: 30px;
+}
+
