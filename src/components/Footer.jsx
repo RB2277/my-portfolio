@@ -1,7 +1,4 @@
-import { useState, useEffect } from 'react'
-
-
-function App() {
+function Footer() {
 
 
   return (
@@ -9,4 +6,4 @@ function App() {
   )
 }
 
-export default App
+export default Footer

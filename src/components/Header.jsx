@@ -3,7 +3,7 @@ import Navigation from "./Navigation";
 
 function Header() {
   return (
-    <header className="container">
+    <header>
             <div className="row">
 
             <div className="col-3">
