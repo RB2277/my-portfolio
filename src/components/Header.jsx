@@ -1,10 +1,13 @@
 import Navigation from "./Navigation";
 
+const overwrite = {
+  marginRight: "0"
+};
 
 function Header() {
   return (
     <header>
-            <div className="row">
+            <div className="row" style={overwrite}>
 
             <div className="col-3">
               <h1 id="name">Riley Burns</h1>

@@ -1,6 +1,6 @@
-body {
+/* body {
   overflow: hidden;
-}
+} */
 #name {
   font-size: 40px;
   padding-left: 15px;
@@ -70,4 +70,8 @@ footer {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.row {
+  margin-right: 0 !important;
 }

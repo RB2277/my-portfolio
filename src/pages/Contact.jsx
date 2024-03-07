@@ -2,7 +2,9 @@ function Contact() {
 
 
   return (
-    <></>
+    <>
+    
+    </>
   )
 }
 
