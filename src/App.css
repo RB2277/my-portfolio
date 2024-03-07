@@ -1,5 +1,11 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 #name {
-  font-size: 30px;
+  font-size: 40px;
+  padding-left: 15px;
 }
 
 header {
@@ -10,7 +16,7 @@ header {
 
 header a {
 padding: 10px;
-font-size: 20px;
+font-size: 30px;
 }
 
 header nav {
@@ -38,3 +44,32 @@ height: auto;
   padding-left: 20px;
 }
 
+footer {
+  background-color: #900c3e;
+  color: white;
+  margin-top: auto;
+}
+
+.footerLogo {
+  height: 80px;
+  width: 80px;
+  margin-left: 50px;
+  padding: 5px;
+}
+
+#logoDiv {
+ display: flex;
+ justify-content: center;
+}
+
+#copyrightDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
