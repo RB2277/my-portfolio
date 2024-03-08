@@ -4,14 +4,17 @@ function About() {
       <div className="col-12">
         <section className="aboutMe">
           <img id="personalPic" src="../../assets/images/personalPic.jpg" alt="A picture of me"></img>
+
           <p>
-            Hello! My name is Riley Burns! Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Iusto non quisquam sequi quo voluptas
-            maiores consectetur eum ducimus totam unde, temporibus sit animi
-            quaerat repellat soluta voluptatum perspiciatis nobis. Cum? soluta
-            voluptatum perspiciatis nobis. Cum? soluta voluptatum perspiciatis
-            nobis. Cum?
+          <h2>Hello!</h2>
+            My name is Riley Burns! A married man as of September, 2023, and a cat dad of two. I've used computers throughout my whole life, and have always been interested in taking the next step.
+            That's when I decided to give it my all and sign up for the University of Minnesota's 12 week Fullstack bootcamp. Throughout it, I've been learning all of the fundamentals of web development, and it's all cultivated
+            into me making my own personal portfolio using React. 
+            <p id="personalAbout">
+            Some of the things I enjoy in my free time outside of strengthening my coding knowledge is studying history, spending time with my family, and gaming. Some of my favorite games are Sid Meier's Civilization
+            6 and Oldschool Runescape. Another hobby of mine is reading, espescially historical literature. I've recently began to read The Canterbury Tales by Geoffrey Chaucer</p>
           </p>
+
         </section>
       </div>
     </div>
