@@ -60,7 +60,7 @@ function Contact() {
         />
         </div>
         <div className="form-group">
-        <input
+        <textarea
           className="form-control"
           value={comments}
           name="comments"
