@@ -103,3 +103,9 @@ footer {
 #personalAbout {
   margin-top: 15px;
 }
+
+.stack {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
