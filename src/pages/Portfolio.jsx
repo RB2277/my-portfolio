@@ -1,27 +1,62 @@
 import Project from "../components/Project"
-import img1 from "../../assets/images/gitHubLogo.png";
+import restaurantImg from "../../assets/images/restaurantImage.png";
+import bartendingImg from "../../assets/images/bartendingImg.png";
+import noteImg from "../../assets/images/noteImg.png";
+import weatherImg from "../../assets/images/weatherImg.png"
+import schedulerImg from "../../assets/images/schedulerImg.png"
+import passwordImg from "../../assets/images/passwordImg.png"
 
 function Portfolio() {
 
   const projects = [{
-    title: "123",
-    link: "456",
-    img: img1,
+    title: "Restaurant Management",
+    github: "https://github.com/Ms-Meredith-McD/Restaurant-Management",
+    deployed: "https://group-1-restaurant-manager-dc017dce6dee.herokuapp.com/",
+    img: restaurantImg 
   },
   {
-    title: "app",
-    link: "concepts",
-    img: "saying",
+    title: "Bartending School",
+    github: "https://github.com/KDeLaria/bartending-school",
+    deployed: "https://kdelaria.github.io/bartending-school/",
+    img: bartendingImg 
   },
+  {
+    title: "Notetaker App",
+    github: "https://github.com/RB2277/note-taker-app",
+    deployed: "https://rb-note-taker-1cfd140edddc.herokuapp.com/",
+    img: noteImg 
+  },
+  {
+    title: "Weather Dashboard",
+    github: "https://github.com/RB2277/weather-dashboard",
+    deployed: "https://rb2277.github.io/weather-dashboard/",
+    img: weatherImg 
+  },
+  {
+    title: "Work Day Scheduler",
+    github: "https://github.com/RB2277/work-day-scheduler",
+    deployed: "https://rb2277.github.io/work-day-scheduler/",
+    img: schedulerImg 
+  },
+  {
+    title: "Password Generator",
+    github: "https://github.com/RB2277/JS-Password-Generator",
+    deployed: "https://rb2277.github.io/JS-Password-Generator/",
+    img: passwordImg 
+  },
+
+
 ]
 
 
   return (
-    <>
+    <div className="container">
+      <div className="row" id="portfolioRow">
   {projects.map((project, idx) => { 
     return <Project title={project.title} link={project.link} img={project.img} id={idx} />
   })}
-    </>
+  </div>
+   </div>
   )
 }
 

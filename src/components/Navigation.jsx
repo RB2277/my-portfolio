@@ -15,7 +15,6 @@ function Navigation() {
         break;
     }
   }
-  console.log(window.location.href.split("/"))
 
   return (
     <nav>
