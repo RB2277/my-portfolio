@@ -2,7 +2,9 @@ function Resume() {
 
 
   return (
-    <></>
+    <>
+    
+    </>
   )
 }
 
