@@ -1,19 +1,111 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  text-decoration: none;
-}
-
-li {
-  list-style-type: none;
-  display: inline;
-  padding: 5px;
-  font-size: 30px;
-}
-
 #name {
-  font-size: 30px;
+  font-size: 40px;
+  padding-left: 15px;
 }
 
+header {
+  background-color: #897775;
+  color: white;
+  width: 100%;
+}
+
+header a {
+padding: 10px;
+font-size: 30px;
+font-weight: 700;
+}
+
+header nav {
+height: auto;
+}
+
+#navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#personalPic {
+  height: 350px;
+  width: 350px;
+  margin: 20px;
+}
+
+.aboutMe {
+  display: flex;
+  font-size: 25px;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin: left 200px;
+  padding-left: 20px;
+}
+
+footer {
+  background-color: #897775;
+  color: white;
+  margin-top: auto;
+}
+
+.footerLogo {
+  height: 80px;
+  width: 80px;
+  margin-left: 50px;
+  padding: 5px;
+}
+
+#logoDiv {
+ display: flex;
+ justify-content: center;
+}
+
+#copyrightDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #e1e9e8
+}
+
+.row {
+  margin-right: 0 !important;
+}
+
+.card-img-top {
+  height: 350px;
+  width: 500px !important;
+  padding-right: 25px;
+}
+
+#projectDiv {
+  margin-top: 10px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  margin: 20px;
+}
+
+.form-group {
+  margin-top: 15px;
+}
+
+#contactBtn {
+  margin-top: 15px;
+}
+
+#personalAbout {
+  margin-top: 15px;
+}
+
+.stack {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
