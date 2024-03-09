@@ -1,10 +1,10 @@
 import Project from "../components/Project"
-import restaurantImg from "../../assets/images/restaurantImage.png";
-import bartendingImg from "../../assets/images/bartendingImg.png";
-import noteImg from "../../assets/images/noteImg.png";
-import weatherImg from "../../assets/images/weatherImg.png"
-import schedulerImg from "../../assets/images/schedulerImg.png"
-import passwordImg from "../../assets/images/passwordImg.png"
+import restaurantImg from "../../public/restaurantImage.png";
+import bartendingImg from "../../public/bartendingImg.png";
+import noteImg from "../../public/noteImg.png";
+import weatherImg from "../../public/weatherImg.png"
+import schedulerImg from "../../public/schedulerImg.png"
+import passwordImg from "../../public/passwordImg.png"
 
 function Portfolio() {
 
