@@ -3,7 +3,7 @@ function About() {
     <div className="row" id="aboutDiv">
       <div className="col-12">
         <section className="aboutMe">
-          <img id="personalPic" src="../../assets/images/personalPic.jpg" alt="A picture of me"></img>
+          <img id="personalPic" src="../../public/personalPic.jpg" alt="A picture of me"></img>
 
           <p>
           <h2>Hello!</h2>
