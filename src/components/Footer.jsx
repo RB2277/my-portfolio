@@ -10,13 +10,13 @@ function Footer() {
         <div className="col-6" id="logoDiv">
 
           <a href="https://github.com/RB2277">
-            <img src="../../public/gitHubLogo.png" alt="small GitHub logo" className="footerLogo"/>
+            <img src="../../public/github.png" alt="small GitHub logo" className="footerLogo"/>
           </a>
           <a href="https://www.linkedin.com/in/riley-burns-4357b72b1/">
-            <img src="../../public/linkedInLogo.png" alt="small Linkedin logo" className="footerLogo" />
+            <img src="../../public/linkedin.png" alt="small Linkedin logo" className="footerLogo" />
           </a>
           <a href="https://github.com/RB2277">
-            <img src="../../public/leetCodeLogo.png" alt="small LeetCode logo" className="footerLogo"/>
+            <img src="../../public/leetcode.png" alt="small LeetCode logo" className="footerLogo"/>
           </a>
         </div>
       </div>
