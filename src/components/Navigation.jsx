@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import styles from "../styles/Header.module.css"
 
 function Navigation() {
   async function routeChange(route) {
@@ -22,10 +23,10 @@ function Navigation() {
 
   return (
     <>
-            <Nav.Link onClick={() => routeChange("about")} href="#about">About Me</Nav.Link>
-            <Nav.Link onClick={() => routeChange("portfolio")} href="#portfolio">Features</Nav.Link>
-            <Nav.Link onClick={() => routeChange("resume")} href="#resume">Resume</Nav.Link>
-            <Nav.Link onClick={() => routeChange("contact")} href="#resume">Contact</Nav.Link>
+            <Nav.Link onClick={() => routeChange("about")} href="#about" className={styles.a}>About Me</Nav.Link>
+            <Nav.Link onClick={() => routeChange("portfolio")} href="#portfolio" className={styles.a}>Features</Nav.Link>
+            <Nav.Link onClick={() => routeChange("resume")} href="#resume" className={styles.a}>Resume</Nav.Link>
+            <Nav.Link onClick={() => routeChange("contact")} href="#resume" className={styles.a}>Contact</Nav.Link>
     </>
   );
 }
