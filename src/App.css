@@ -14,29 +14,8 @@
   padding-left: 20px;
 }
 
-footer {
-  background-color: #897775;
-  color: white;
-  margin-top: auto;
-}
 
-.footerLogo {
-  height: 80px;
-  width: 80px;
-  margin-left: 50px;
-  padding: 5px;
-}
 
-#logoDiv {
- display: flex;
- justify-content: center;
-}
-
-#copyrightDiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .page-container {
   display: flex;
