@@ -1,21 +1,23 @@
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import Navigation from "./Navigation";
 
-const overwrite = {
-  marginRight: "0"
-};
 
 function Header() {
   return (
     <header>
-            <div className="row" style={overwrite}>
-
-            <div className="col-3">
-              <h1 id="name">Riley Burns</h1>
-            </div>
-            <div className="col-9" id="navigation">
+  <Navbar expand="md" bg="dark" variant='dark'>
+        <Container>
+          <Navbar.Brand href="#about">Riley Burns</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto">
           <Navigation />
-            </div>
-      </div>
+          </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
       </header>
 
   );

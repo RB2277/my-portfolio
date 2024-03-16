@@ -1,3 +1,7 @@
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
 function Navigation() {
   async function routeChange(route) {
     switch (route) {
@@ -17,12 +21,12 @@ function Navigation() {
   }
 
   return (
-    <nav>
-      <a onClick={() => routeChange("about")} className={window.location.href.split("/")[3] === "" ? 'text-white text-decoration-none' : 'text-black text-decoration-none'}>About Me</a>
-      <a onClick={() => routeChange("portfolio")} className={window.location.href.split("/")[3] === "portfolio" ? 'text-white text-decoration-none' : 'text-black text-decoration-none'}>Portfolio</a>
-      <a onClick={() => routeChange("resume")} className={window.location.href.split("/")[3] === "resume" ? 'text-white text-decoration-none' : 'text-black text-decoration-none'}>Resume</a>
-      <a onClick={() => routeChange("contact")}  className={window.location.href.split("/")[3] === "contact" ? 'text-white text-decoration-none' : 'text-black text-decoration-none'}>Contact</a>
-    </nav>
+    <>
+            <Nav.Link onClick={() => routeChange("about")} href="#about">About Me</Nav.Link>
+            <Nav.Link onClick={() => routeChange("portfolio")} href="#portfolio">Features</Nav.Link>
+            <Nav.Link onClick={() => routeChange("resume")} href="#resume">Resume</Nav.Link>
+            <Nav.Link onClick={() => routeChange("contact")} href="#resume">Contact</Nav.Link>
+    </>
   );
 }
 
