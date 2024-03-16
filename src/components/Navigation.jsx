@@ -23,10 +23,10 @@ function Navigation() {
 
   return (
     <>
-            <Nav.Link onClick={() => routeChange("about")} href="#about" className={styles.a}>About Me</Nav.Link>
-            <Nav.Link onClick={() => routeChange("portfolio")} href="#portfolio" className={styles.a}>Features</Nav.Link>
-            <Nav.Link onClick={() => routeChange("resume")} href="#resume" className={styles.a}>Resume</Nav.Link>
-            <Nav.Link onClick={() => routeChange("contact")} href="#resume" className={styles.a}>Contact</Nav.Link>
+            <Nav.Link onClick={() => routeChange("about")} href="#about" className={`${styles.a} ${window.location.href.split("/")[3] === "" ? 'text-white text-decoration-none' : 'text-decoration-none'}`}>About Me</Nav.Link>
+            <Nav.Link onClick={() => routeChange("portfolio")} href="#portfolio" className={`${styles.a} ${window.location.href.split("/")[3] === "portfolio" ? 'text-white text-decoration-none' : 'text-decoration-none'}`}>Features</Nav.Link>
+            <Nav.Link onClick={() => routeChange("resume")} href="#resume" className={`${styles.a} ${window.location.href.split("/")[3] === "resume" ? 'text-white text-decoration-none' : 'text-decoration-none'}`}>Resume</Nav.Link>
+            <Nav.Link onClick={() => routeChange("contact")} href="#resume" className={`${styles.a} ${window.location.href.split("/")[3] === "contact" ? 'text-white text-decoration-none' : 'text-decoration-none'}`}>Contact</Nav.Link>
     </>
   );
 }
