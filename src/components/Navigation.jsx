@@ -12,9 +12,6 @@ function Navigation() {
       case "portfolio":
         window.location.href = "/portfolio";
         break;
-      case "resume":
-        window.location.href = "/resume";
-        break;
       case "contact":
         window.location.href = "/contact";
         break;
@@ -25,7 +22,6 @@ function Navigation() {
     <>
             <Nav.Link onClick={() => routeChange("about")} href="#about" className={`${styles.a} ${window.location.href.split("/")[3] === "" ? 'text-white text-decoration-none' : 'text-decoration-none'}`}>About Me</Nav.Link>
             <Nav.Link onClick={() => routeChange("portfolio")} href="#portfolio" className={`${styles.a} ${window.location.href.split("/")[3] === "portfolio" ? 'text-white text-decoration-none' : 'text-decoration-none'}`}>Portfolio</Nav.Link>
-            <Nav.Link onClick={() => routeChange("resume")} href="#resume" className={`${styles.a} ${window.location.href.split("/")[3] === "resume" ? 'text-white text-decoration-none' : 'text-decoration-none'}`}>Tech Stack</Nav.Link>
             <Nav.Link onClick={() => routeChange("contact")} href="#resume" className={`${styles.a} ${window.location.href.split("/")[3] === "contact" ? 'text-white text-decoration-none' : 'text-decoration-none'}`}>Contact</Nav.Link>
     </>
   );

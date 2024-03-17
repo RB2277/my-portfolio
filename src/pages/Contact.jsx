@@ -37,7 +37,7 @@ function Contact() {
   return (
     <>
      <div className="container text-center">
-      <h1>Looking to get in touch? Fill out the form below!</h1>
+      <h1 className='text-light mb-5'>Looking to get in touch? Fill out the form below!</h1>
       <form className="form" onSubmit={handleFormSubmit}>
         <div className="form-group">
         <input
