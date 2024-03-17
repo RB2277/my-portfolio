@@ -1,24 +1,24 @@
 import Project from "../components/Project"
 import restaurantImg from "../assets/images/restaurant.png";
-import bartendingImg from "../assets/images/bartending.png";
+import bartender from "../assets/images/bartender.jpg"
 import noteImg from "../assets/images/notetaker.png";
 import weatherImg from "../assets/images/weather.png"
-import schedulerImg from "../assets/images/scheduler.png"
+import jobpilot from "../assets/images/jobpilot.png"
 import passwordImg from "../assets/images/password.png"
 
 function Portfolio() {
 
   const projects = [{
-    title: "Restaurant Management",
+    title: "Gary's Pitpub",
     github: "https://github.com/Ms-Meredith-McD/Restaurant-Management",
     deployed: "https://group-1-restaurant-manager-dc017dce6dee.herokuapp.com/",
     img: restaurantImg 
   },
   {
-    title: "Bartending School",
-    github: "https://github.com/KDeLaria/bartending-school",
-    deployed: "https://kdelaria.github.io/bartending-school/",
-    img: bartendingImg 
+    title: "JobPilot",
+    github: "https://github.com/Ms-Meredith-McD/JobPilot",
+    deployed: "https://job-pilot-a6ce9a91751d.herokuapp.com/",
+    img: jobpilot 
   },
   {
     title: "Notetaker App",
@@ -33,10 +33,10 @@ function Portfolio() {
     img: weatherImg 
   },
   {
-    title: "Work Day Scheduler",
-    github: "https://github.com/RB2277/work-day-scheduler",
-    deployed: "https://rb2277.github.io/work-day-scheduler/",
-    img: schedulerImg 
+    title: "Bartending School",
+    github: "https://github.com/KDeLaria/bartending-school",
+    deployed: "https://kdelaria.github.io/bartending-school/",
+    img: bartender
   },
   {
     title: "Password Generator",
@@ -51,12 +51,21 @@ function Portfolio() {
 
   return (
     <div className="container">
-      <div className="row" id="portfolioRow">
-  {projects.map((project, idx) => { 
-    return <Project title={project.title} link={project.link} img={project.img} id={idx} />
-  })}
+    <div className="row">
+      {projects.map((project, idx) => {
+        return (
+          <div key={idx} className="col-sm-12 col-md-6">
+            <Project
+              title={project.title}
+              github={project.github}
+              deployed={project.deployed}
+              img={project.img}
+            />
+          </div>
+        );
+      })}
+    </div>
   </div>
-   </div>
   )
 }
 

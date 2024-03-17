@@ -2,7 +2,6 @@ import './App.css'
 import Header from './components/Header'
 import About from './pages/About';
 import Portfolio from './pages/Portfolio'
-import Resume from './pages/Resume';
 import Contact from './pages/Contact'
 import Footer from './components/Footer';
 
@@ -19,7 +18,6 @@ function App() {
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<About />} />
         </Routes>

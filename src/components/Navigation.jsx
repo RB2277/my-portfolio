@@ -1,3 +1,8 @@
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import styles from "../styles/Header.module.css"
+
 function Navigation() {
   async function routeChange(route) {
     switch (route) {
@@ -7,9 +12,6 @@ function Navigation() {
       case "portfolio":
         window.location.href = "/portfolio";
         break;
-      case "resume":
-        window.location.href = "/resume";
-        break;
       case "contact":
         window.location.href = "/contact";
         break;
@@ -17,12 +19,11 @@ function Navigation() {
   }
 
   return (
-    <nav>
-      <a onClick={() => routeChange("about")} className={window.location.href.split("/")[3] === "" ? 'text-white text-decoration-none' : 'text-black text-decoration-none'}>About Me</a>
-      <a onClick={() => routeChange("portfolio")} className={window.location.href.split("/")[3] === "portfolio" ? 'text-white text-decoration-none' : 'text-black text-decoration-none'}>Portfolio</a>
-      <a onClick={() => routeChange("resume")} className={window.location.href.split("/")[3] === "resume" ? 'text-white text-decoration-none' : 'text-black text-decoration-none'}>Resume</a>
-      <a onClick={() => routeChange("contact")}  className={window.location.href.split("/")[3] === "contact" ? 'text-white text-decoration-none' : 'text-black text-decoration-none'}>Contact</a>
-    </nav>
+    <>
+            <Nav.Link onClick={() => routeChange("about")} href="#about" className={`${styles.a} ${window.location.href.split("/")[3] === "" ? 'text-white text-decoration-none' : 'text-decoration-none'}`}>About Me</Nav.Link>
+            <Nav.Link onClick={() => routeChange("portfolio")} href="#portfolio" className={`${styles.a} ${window.location.href.split("/")[3] === "portfolio" ? 'text-white text-decoration-none' : 'text-decoration-none'}`}>Portfolio</Nav.Link>
+            <Nav.Link onClick={() => routeChange("contact")} href="#resume" className={`${styles.a} ${window.location.href.split("/")[3] === "contact" ? 'text-white text-decoration-none' : 'text-decoration-none'}`}>Contact</Nav.Link>
+    </>
   );
 }
 

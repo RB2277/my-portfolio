@@ -1,0 +1,17 @@
+.header {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.name {
+    font-size: 35px !important;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+.a {
+    font-size: 20px !important;
+}
+
+  /* Need to comeback and remove the !Important modifiers and instead find work arounds */
