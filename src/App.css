@@ -36,9 +36,8 @@
 }
 
 .card-img-top {
-  height: 350px;
-  width: 500px !important;
-  padding-right: 25px;
+  max-width: 100%;
+  height: auto;
 }
 
 #projectDiv {
@@ -50,6 +49,8 @@
 
 .card-body {
   margin: 20px;
+  display: flex;
+  align-items: baseline;
 }
 
 .form-group {
@@ -75,6 +76,14 @@ p {
 h2 {
   color: white !important;
   font-family: 'Roboto', sans-serif;
+}
+
+h5 {
+  color: white !important;
+  font-family: "Playfair Display", serif !important;
+  font-weight: 700 !important;
+  padding-right: 1vh;
+  border-right: solid;
 }
 
 @media (max-width: 768px) {
