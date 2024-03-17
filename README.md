@@ -22,7 +22,7 @@ If you would like to play around with my portfolio, feel free to clone the proje
 
 The site is deployed using Netlify and the link can be found below!
 
-https://main--superlative-otter-d6c03b.netlify.app/
+https://rileyburns.netlify.app/
 
 
 ## Credits
